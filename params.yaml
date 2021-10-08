@@ -1,0 +1,17 @@
+base:
+  project: EnergyEfficiency.xlsx
+  random_state: 42
+  target_col: heating load
+
+data_source:
+  s3_source: data_given/EnergyEfficiency.xlsx
+
+load_data:
+  raw_dataset_xlsx: data/raw/EnergyEfficiency.xlsx
+
+split_data:
+  train_path: data/processed/train_EnergyEfficiency.xlsx
+  test_path: data/processed/test_EnergyEfficiency.xlsx
+  test_size: 0.2
+
+estimators:
